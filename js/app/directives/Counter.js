@@ -17,7 +17,7 @@ function Counter() {
 				scope.$apply();
 			});
 
-			$scope.$on('$destroy', function () {
+			scope.$on('$destroy', function () {
 				element.off();
 			});
 		}
