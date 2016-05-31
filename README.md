@@ -37,7 +37,7 @@ function Counter() {
 				scope.$apply();
 			});
 
-			$scope.$on('$destroy', function () {
+			scope.$on('$destroy', function () {
 				element.off();
 			});
 		}
@@ -116,3 +116,5 @@ describe('Directive Test', function() {
 ```
 
 Sorted - now our directive is tested, and is working perfectly!
+
+<p class='util--hide'>View <a href='https://learn.co/lessons/angular-testing-custom-directives-readme'>Angular Testing Custom Directives </a> on Learn.co and start learning to code for free.</p>
